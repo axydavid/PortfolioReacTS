@@ -1,0 +1,50 @@
+.body{
+    margin:0;
+}
+
+.App{
+    display:flex;
+    align-items:center;
+    justify-items: center;
+    flex-direction:column;
+}
+
+.cards-container{
+    margin:30px 0 0 0;
+    /* height: 500px; */
+    width: 500px;
+    overflow-y: Scroll;
+    display: flex;
+    align-items:center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card2{
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-bottom: 15px;
+    max-width: 498px;
+    width: 498px;
+    
+}
+
+.card{
+    margin-bottom: 30px;
+}
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 5px;
+  }
+
+.nav-link:focus{
+    background-color:rgba(255,255,255,.55);
+    color: rgb(33,37,41) !important;
+}
+
+.active {
+    background-color: #0099FF;
+  }
