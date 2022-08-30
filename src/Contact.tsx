@@ -13,9 +13,13 @@ function Contact(props: any) {
   const [top1, setTop] = useState('0px');
   const [rows, setRows] = useState(5);
   const [isDisabled, setDisabled] = useState(false);
-  const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+  // const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
   useEffect(() => {
+    function handleChange(vari: number) {
+      props.onChange(vari)
+    }
+
     handleChange(2);
     document.documentElement.scrollTo(0, 0);
     if (window.innerWidth < 366) setRows(2);
@@ -23,9 +27,7 @@ function Contact(props: any) {
   }, []);
 
 
-  function handleChange(vari: number) {
-    props.onChange(vari)
-  }
+
 
   const sendEmail = async (e: any) => {
     e.preventDefault();

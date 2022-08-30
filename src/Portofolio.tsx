@@ -7,7 +7,6 @@ import backvid from './img/slowBookeh.mp4'
 
 import { Container, Col, Card, Button } from 'react-bootstrap';
 import { Plock } from 'react-plock';
-import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -75,7 +74,7 @@ export default function Portofolio(props: any) {
   const handleData = async (e: React.MouseEvent<HTMLButtonElement>) => {
     let filter = e.currentTarget.value;
     colRef.current!.map(item => {
-      if (item !== null) item.className = `p-0 mClass mClassShowDown`;
+      if (item !== null) return item.className = `p-0 mClass mClassShowDown`;
     });
     await delay(150);
 
@@ -85,7 +84,7 @@ export default function Portofolio(props: any) {
 
     await delay(30);
     colRef.current!.map(item => {
-      if (item !== null) item.className = `p-0 mClass mClassShow`;
+      if (item !== null) return item.className = `p-0 mClass mClassShow`;
     });
 
   }
@@ -171,7 +170,7 @@ export default function Portofolio(props: any) {
     if (titleRef !== null) titleRef.current[id]!.style.height = `${titleRef.current[id]!.scrollHeight - 1}px`;
     if (titleRef3 !== null) titleRef3.current[id]!.className = 'pe-none text-center p-1 hid-box4';
     titleRef2.current[id]!.map(item => {
-      item!.style.opacity = `.9`;
+      return item!.style.opacity = `.9`;
     });
     // return setShowResults(id);
   }
@@ -180,7 +179,7 @@ export default function Portofolio(props: any) {
     if (titleRef !== null) titleRef.current[id]!.style.height = '48px';
     if (titleRef3 !== null) titleRef3.current[id]!.className = 'pe-none text-center p-1 hid-box5';
     titleRef2.current[id]!.map(item => {
-      item!.style.opacity = `0`;
+      return item!.style.opacity = `0`;
     });
     // return setShowResults(id);
   }
@@ -194,7 +193,7 @@ export default function Portofolio(props: any) {
     setModalShow(false)
     await delay(15);
     colRef.current!.map(item => {
-      if (item !== null) item.className = `p-0 mClass mClassShow`;
+      if (item !== null) return item.className = `p-0 mClass mClassShow`;
     });
   }
 
@@ -204,7 +203,7 @@ export default function Portofolio(props: any) {
       if (titleRef !== null) titleRef.current[data.id]!.style.height = '48px';
       if (titleRef3 !== null) titleRef3.current[data.id]!.className = 'pe-none text-center p-1 hid-box5';
       titleRef2.current[data.id]!.map(item => {
-        item!.style.opacity = `0`;
+        return item!.style.opacity = `0`;
       });
 
       await delay(140);

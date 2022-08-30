@@ -33,13 +33,14 @@ function Home(props: any) {
 
   useEffect(() => {
 
+    function handleChange(vari: number) {
+      props.onChange(vari)
+    }
+
     handleChange(0);
   }, []);
 
 
-  function handleChange(vari: number) {
-    props.onChange(vari)
-  }
 
 
 
@@ -201,7 +202,7 @@ function Home(props: any) {
                   <h3 className="title m-auto">Start a project</h3>
                 </Col>
                 <Col className="column level-item d-flex">
-                  <p className="m-auto text-center" style={{ fontSize: '18px' }}>Interested in joining forces together? <br />Check out my <a href={cv} target="_blank"><b style={{ fontWeight: '600' }} >CV</b></a> & let's have a talk!</p>
+                  <p className="m-auto text-center" style={{ fontSize: '18px' }}>Interested in joining forces together? <br />Check out my <a href={cv} ><b style={{ fontWeight: '600' }} >CV</b></a> & let's have a talk!</p>
                 </Col>
                 <Col className="column level-item d-flex">
                   <Button style={{ minWidth: '200px', maxHeight: '54px', borderRadius: '50px', borderWidth: '2px', fontWeight: 'bold', color: 'white' }} className="m-auto" variant="outline-primary" onClick={(e) => {

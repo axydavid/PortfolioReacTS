@@ -1,9 +1,5 @@
-import React, { useState, useEffect, useRef, MouseEvent } from "react";
-import { buttons, data } from "./Data";
-import backvid from './img/slowBookeh.mp4'
+import { useState, useEffect, MouseEvent } from "react";
 
-import oceanicEx from './img/store/OceanicEx.png'
-import oceanicEx2 from './img/store/OceanicEx2.png'
 import oceanicBase from './img/store/OceanicBase.png'
 import bottle from './img/store/bottle.png'
 import jar from './img/store/plasticJar.png'
@@ -17,13 +13,10 @@ import Items3 from './img/store/3Items.svg'
 import background from "./img/p0010.jpg";
 import logo from './img/AgencyLogo.png'
 
-import { Container, Row, Form, Card, Button } from 'react-bootstrap';
-import { Plock } from 'react-plock';
+import { Container, Row, Form } from 'react-bootstrap';
 import { useSpring, animated, to } from '@react-spring/web'
 import { Link } from 'react-router-dom';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-creative";
 import 'swiper/css/navigation';
