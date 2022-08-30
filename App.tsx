@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button, Row, Col, Container } from 'react-bootstrap';
@@ -43,7 +42,7 @@ function App() {
     const handleClick = () => setLoading(true);
 
     return (
-      <Button style={{maxWidth: '145px'}} className="mx-auto" variant="primary" size="lg" disabled={isLoading} onClick={!isLoading ? handleClick : undefined}>
+      <Button style={{ maxWidth: '145px' }} className="mx-auto" variant="primary" size="lg" disabled={isLoading} onClick={!isLoading ? handleClick : undefined}>
         {isLoading ? 'Loading…' : 'Click to load'}
       </Button>
     );
@@ -51,22 +50,22 @@ function App() {
   return (
     <div className="App">
       <Container>
-      <p className='mt-5'/>
-      <Row><LoadingButton /></Row>
-        <p />
-        <Row className='gap-1'>
+        <p className='mt-5' />
+        <Row><LoadingButton /></Row>
+        <p className='mt-5' />
+        <Row className='gap-1 justify-content-center '>
           {cards.map((item: cardInfo, index: number) => {
             return <Col className="justify-content-center" md="auto">
-            <Card style={{ width: '18rem' }}>
-              <Card.Header as="h5">Type: {item.type}</Card.Header>
-              <Card.Body>
-                <Card.Title>Persons: {item.participants}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Cost: {item.price * 100}$</Card.Subtitle>
-                <Card.Text>
-                  Description: {item.activity}
-                </Card.Text>
-              </Card.Body>
-            </Card>
+              <Card style={{ width: '18rem' }}>
+                <Card.Header as="h5">Type: {item.type}</Card.Header>
+                <Card.Body>
+                  <Card.Title>Persons: {item.participants}</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Cost: {item.price * 100}$</Card.Subtitle>
+                  <Card.Text>
+                    Description: {item.activity}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
           })}
         </Row>

@@ -1,6 +1,9 @@
-import React, { StrictMode } from 'react';
-import ReactDOM from 'react-dom';
-import Main from './Main';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import NavBar from './NavBar';
 
+import './Main.scss';
+import Footer from './Footer';
 
-ReactDOM.render( <StrictMode><Main/></StrictMode>, document.getElementById('root'));
+const root = createRoot(document.getElementById('root')!);
+root.render(<StrictMode><NavBar /><Footer /></StrictMode>);
