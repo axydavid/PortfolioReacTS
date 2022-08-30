@@ -114,7 +114,7 @@ export default function Portofolio(props: any) {
             {
               books.loc !== undefined && <Button style={{ minWidth: '130px', borderRadius: '50px', borderWidth: '2px', color: 'white' }} size="sm" className="fw-bold" variant="outline-primary" onClick={(e) => {
                 e.preventDefault();
-                window.open(books.loc); navigate(`/contact`);
+                window.open(books.loc);
               }}>
                 <img className="position-relative imgButton" src={house} style={{ maxWidth: '25px', top: "-2px", filter: "invert()" }} />
                 &nbsp;Visit</Button>
