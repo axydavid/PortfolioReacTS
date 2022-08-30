@@ -22,6 +22,7 @@ jobs:
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
+          CI: false
           REPO: self
           BRANCH: build # The branch name where you want to push the assets
           FOLDER: build # The directory where your assets are generated
