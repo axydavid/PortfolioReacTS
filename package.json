@@ -16,7 +16,6 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "aos": "^2.3.4",
-    "bear-react-carousel": "^1.2.17",
     "bootstrap": "^5.1.3",
     "emailjs": "^4.0.0",
     "node-sass": "^7.0.1",
