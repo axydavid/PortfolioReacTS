@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.59e1e971.css",
-    "main.js": "./static/js/main.822eba26.js",
+    "main.css": "./static/css/main.49db3cb7.css",
+    "main.js": "./static/js/main.86b71c62.js",
     "static/media/OceanicBase.png": "./static/media/OceanicBase.a3fcb7b69ff510dfdccb.png",
     "static/media/p0010.jpg": "./static/media/p0010.ff2f4e1fd969b14f7063.jpg",
     "static/media/bottle.png": "./static/media/bottle.ff9b5be329f3ec923b6b.png",
@@ -72,11 +72,11 @@
     "static/media/3Items.svg": "./static/media/3Items.9cabce65d5a21cad584519a8f26319fc.svg",
     "static/media/1Items.svg": "./static/media/1Items.fdbab1f5f1d19a7bfcb4ddea553526f7.svg",
     "static/media/house.svg": "./static/media/house.fab2cffe6a3a62d3e577673d3f470dea.svg",
-    "main.59e1e971.css.map": "./static/css/main.59e1e971.css.map",
-    "main.822eba26.js.map": "./static/js/main.822eba26.js.map"
+    "main.49db3cb7.css.map": "./static/css/main.49db3cb7.css.map",
+    "main.86b71c62.js.map": "./static/js/main.86b71c62.js.map"
   },
   "entrypoints": [
-    "static/css/main.59e1e971.css",
-    "static/js/main.822eba26.js"
+    "static/css/main.49db3cb7.css",
+    "static/js/main.86b71c62.js"
   ]
 }
