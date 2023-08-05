@@ -235,7 +235,7 @@ export default function Portofolio(props: any) {
         <Container className='mContainer py-6 ' style={{ maxWidth: '1000px' }} data-aos="fade-down" data-aos-delay="100">
           <Masonry items={filterDataState!} config={{
             columns: [1, 1, 2],
-            gap: [60],
+            gap: [30, 30, 30],
             media: [576, 768, 1200]
           }}
             render={type => ( //{ cursor: 'pointer'}, 
