@@ -6,7 +6,7 @@ import house from './img/house.svg'
 import backvid from './img/slowBookeh.mp4'
 
 import { Container, Col, Card, Button } from 'react-bootstrap';
-import { Plock } from 'react-plock';
+import { Masonry } from 'react-plock';
 import { useNavigate } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -233,39 +233,42 @@ export default function Portofolio(props: any) {
         </Col>
 
         <Container className='mContainer py-6 ' style={{ maxWidth: '1000px' }} data-aos="fade-down" data-aos-delay="100">
-          <Plock breakpoints={[{ size: 576, columns: 1 }, { size: 768, columns: 1 }, { size: 1200, columns: 2 }]} gap={'2em'} >
-            {filterDataState &&
-              filterDataState.map((type: any) => ( //{ cursor: 'pointer'}, 
-                <Col ref={(element: HTMLDivElement) => { colRef.current[type.id] = element }} style={{ cursor: 'pointer' }} className='p-0 mClass ' onClick={() => onCleck(type)} onMouseEnter={(e) => onEnter(e, type.id)} onMouseLeave={(e) => onExit(e, type.id)}>
-                  <Card className='m-auto  ' bg='dark' text='white' key={type.id} >
+          <Masonry items={filterDataState!} config={{
+            columns: [1, 1, 2],
+            gap: [60],
+            media: [576, 768, 1200]
+          }}
+            render={type => ( //{ cursor: 'pointer'}, 
+              <Col ref={(element: HTMLDivElement) => { colRef.current[type.id] = element }} style={{ cursor: 'pointer' }} className='p-0 mClass ' onClick={() => onCleck(type)} onMouseEnter={(e) => onEnter(e, type.id)} onMouseLeave={(e) => onExit(e, type.id)}>
+                <Card className='m-auto  ' bg='dark' text='white' key={type.id} >
 
-                    <Card.Img src={type.img[0]} />
-                    <Card.ImgOverlay className='d-flex flex-column p-0 overflow-hidden' >
+                  <Card.Img src={type.img[0]} />
+                  <Card.ImgOverlay className='d-flex flex-column p-0 overflow-hidden' >
 
-                      <div className='pe-none text-center p-1 hid-box5' ref={(element: HTMLDivElement) => { titleRef3.current[type.id] = element }}>
-                        {type.tipo.map((type2: string, index: number) => (
+                    <div className='pe-none text-center p-1 hid-box5' ref={(element: HTMLDivElement) => { titleRef3.current[type.id] = element }}>
+                      {type.tipo.map((type2: string, index: number) => (
 
 
 
-                          <div className="btn btn-dark btn-sm hid-box3 btn-sm2" ref={(element: HTMLDivElement) => {
-                            titleRef2.current[type.id] = titleRef2.current[type.id] || [];
-                            titleRef2.current[type.id][index] = element;
-                          }}>
-                            {type2}
-                          </div>
-                        ))}
-                      </div>
+                        <div className="btn btn-dark btn-sm hid-box3 btn-sm2" ref={(element: HTMLDivElement) => {
+                          titleRef2.current[type.id] = titleRef2.current[type.id] || [];
+                          titleRef2.current[type.id][index] = element;
+                        }}>
+                          {type2}
+                        </div>
+                      ))}
+                    </div>
 
-                      <div ref={(element: HTMLDivElement) => { titleRef.current[type.id] = element }} className='hid-box p-0' style={{ background: 'rgba(0,0,0,.5)' }}>
+                    <div ref={(element: HTMLDivElement) => { titleRef.current[type.id] = element }} className='hid-box p-0' style={{ background: 'rgba(0,0,0,.5)' }}>
 
-                        <Card.Header style={{ background: 'rgba(0,0,0,.3)' }} className='text-center '><h6>{type.title}</h6></Card.Header>
-                        <Card.Body style={{ background: 'rgba(0,0,0,.2)' }} className='text-center flex-grow-0 '>{type.content}</Card.Body>
-                      </div>
-                    </Card.ImgOverlay>
-                  </Card>
-                </Col>
-              ))}
-          </Plock>
+                      <Card.Header style={{ background: 'rgba(0,0,0,.3)' }} className='text-center '><h6>{type.title}</h6></Card.Header>
+                      <Card.Body style={{ background: 'rgba(0,0,0,.2)' }} className='text-center flex-grow-0 '>{type.content}</Card.Body>
+                    </div>
+                  </Card.ImgOverlay>
+                </Card>
+              </Col>
+            )}
+          />
         </Container>
 
 
