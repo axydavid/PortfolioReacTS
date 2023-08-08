@@ -100,7 +100,7 @@ export default function Main() {
                         </Navbar.Brand>
                         <Nav className="justify-content-end nav-bubble px-2">
                             <NavItem ><Link style={{ color: colorL }} onMouseDown={(e) => hideNav(e)} className={`nav-link ${page === 0 && 'nactive'}`} to="/" ><div className='d-none'>0</div>Home</Link></NavItem>
-                            <NavItem ><Link style={{ color: colorL }} onMouseDown={(e) => hideNav(e)} className={`nav-link ${page === 1 && 'nactive'}`} to="/portofolio"><div className='d-none'>1</div>Portofolio</Link></NavItem>
+                            <NavItem ><Link style={{ color: colorL }} onMouseDown={(e) => hideNav(e)} className={`nav-link ${page === 1 && 'nactive'}`} to="/portofolio"><div className='d-none'>1</div>Portfolio</Link></NavItem>
                             <NavItem ><Link style={{ color: colorL }} onMouseDown={(e) => hideNav(e)} className={`nav-link ${page === 2 && 'nactive'}`} to="/contact"><div className='d-none'>2</div>Contact</Link></NavItem>
                             {/* <NavItem ><Link style={{ color: colorL }} onClick={(e) => switchNav(false, e)} onMouseDown={hideNav} className="nav-link" to="/app">Labs</Link></NavItem> */}
                         </Nav>
