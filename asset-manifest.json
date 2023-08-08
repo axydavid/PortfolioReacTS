@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.ea8d9904.css",
-    "main.js": "./static/js/main.000ab763.js",
+    "main.css": "./static/css/main.d96f0f55.css",
+    "main.js": "./static/js/main.88b00be5.js",
     "static/media/OceanicBase.png": "./static/media/OceanicBase.a3fcb7b69ff510dfdccb.png",
     "static/media/p0010.jpg": "./static/media/p0010.ff2f4e1fd969b14f7063.jpg",
     "static/media/sales perspective mock.png": "./static/media/sales perspective mock.d24f96bcfff680c61065.png",
@@ -91,11 +91,11 @@
     "static/media/2Items.svg": "./static/media/2Items.c0a9d8905cb07ed0efbbba731bade0be.svg",
     "static/media/3Items.svg": "./static/media/3Items.9cabce65d5a21cad584519a8f26319fc.svg",
     "static/media/1Items.svg": "./static/media/1Items.fdbab1f5f1d19a7bfcb4ddea553526f7.svg",
-    "main.ea8d9904.css.map": "./static/css/main.ea8d9904.css.map",
-    "main.000ab763.js.map": "./static/js/main.000ab763.js.map"
+    "main.d96f0f55.css.map": "./static/css/main.d96f0f55.css.map",
+    "main.88b00be5.js.map": "./static/js/main.88b00be5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea8d9904.css",
-    "static/js/main.000ab763.js"
+    "static/css/main.d96f0f55.css",
+    "static/js/main.88b00be5.js"
   ]
 }
