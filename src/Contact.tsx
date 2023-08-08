@@ -39,11 +39,11 @@ function Contact(props: any) {
         // await delay(200);
         setDisabled(true);
         smil.current.style.opacity = 1;
-        textC.current.innerHTML = "Your message has been received✔️<br>I will reply to you as soon as possible."
+        textC.current.innerHTML = "Thank You!✔️<br>I will reach out to you as soon as possible."
         textC.current.style.opacity = 1;
       }, (error) => {
         textC.current.style.opacity = 1;
-        textC.current.innerHTML = "An error has occurred❌<br> Please try again."
+        textC.current.innerHTML = "Error❌<br> Please try again."
       });
 
 
@@ -64,9 +64,8 @@ function Contact(props: any) {
               <img className="pe-auto" onMouseEnter={() => setTop('-3px')} onMouseLeave={() => setTop('0px')} src={selfieN} style={{ maxWidth: '22vh' }} />
             </Row>
           </div>
-          <h2 className='fw-normal recText text-center mt-auto' ref={textC} data-aos="fade-down" data-aos-delay="200">
-            Thanks for reaching out to me. <br />How can I help you today?</h2>
-
+          <h2 className='fw-bold recText text-center mt-auto' ref={textC} data-aos="fade-down" data-aos-delay="200">
+            Thrilled that you've reached out!<br />How can I make your goals a reality?</h2>
           <Row className='mt-auto' data-aos="fade-down" data-aos-delay="300" >
             <Form.Group as={Col} className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Name</Form.Label>
@@ -82,7 +81,7 @@ function Contact(props: any) {
             <Form.Control as="textarea" name="message" rows={rows} disabled={isDisabled} />
           </Form.Group>
           <Row className='mb-3'>
-            <Button className="m-auto btn-round " variant="outline-primary" type="submit" disabled={isDisabled} >
+            <Button className="m-auto btn-round fw-bold" variant="outline-primary" type="submit" disabled={isDisabled} >
               Submit
             </Button>
           </Row>
