@@ -83,7 +83,7 @@ export const data = [
     },
     {
       id: i++,
-      title: "SaaS-Crypto Royal Black A/B Test",
+      title: "SaaS - Crypto Royal Black A/B Test",
       tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping', 'A/B Testing'],
       content: 'Through A/B testing, the dark frosted glass variant of the product demonstrated a significant increase in user engagement and retention compared to the plain version.',
       img: [crypBlackGlass, crypBlack],
@@ -91,7 +91,7 @@ export const data = [
     },
     {
       id: i++,
-      title: "PortofolioTS",
+      title: "Innovative Portfolio",
       tipo: ['Development', "Front-End", "React", 'HTML', 'CSS', 'SASS', 'JavaScript', 'TypeScript', 'Bootstrap'],
       content: 'My portfolio page, developed utilizing cutting-edge technologies.',
       img: [port, port2],
@@ -148,7 +148,7 @@ export const data = [
     },
     {
       id: i++,
-      title: "iTask",
+      title: ".NET Web Application with C# and CSS",
       tipo: ['Development', 'Full-Stack', "Back-End", "Front-End", '.NET', 'C#', 'CSS'],
       content: 'A web application utilizing the .NET platform, developed with C# and CSS to ensure optimal performance and design integrity.',
       img: [itask],
@@ -163,7 +163,7 @@ export const data = [
     },
     {
       id: i++,
-      title: "UnityDev",
+      title: "Multiplayer Game - Unity",
       tipo: ['Development', 'Game Development', "C#", '.NET', "Unity"],
       content: 'A project involving the integration of multiplayer functionality into a core game alongside various enhancements to improve the foundational experience and achieve an optimal multiplayer gameplay experience.',
       img: [unity, unity2, unity3],
@@ -171,7 +171,7 @@ export const data = [
     },
     {
       id: i++,
-      title: "FirefoxUI",
+      title: "Firefox UI",
       tipo: ['Development', 'CSS', "UserChrome", "skin"],
       content: 'A modded version of the Australis Firefox UI.',
       img: [fire, fire2],
@@ -179,7 +179,7 @@ export const data = [
     },
     {
       id: i++,
-      title: "messengerProject",
+      title: "Native Messenger Project",
       tipo: ['Development', '.NET', 'C#', "JavaScript", "NodeJS"],
       content: 'Facebook messenger application built with C# and JS.',
       img: [mess],

@@ -86,7 +86,7 @@ function Home(props: any) {
         >
           <div className='align-self-center flex-shrink-0 text-white ' style={{ maxWidth: '820px', width: '80vw' }}>
             <h3 className="text-center ">Hi there, I'm David!</h3>
-            <div className="text-center pt-4">My journey as a full-stack developer began nearly 7 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+            <div className="text-center pt-4">My journey as a designer & developer began over 7 years ago, I've worked for various agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm commited, naturally curious, and perpetually working on improving my chops one project at a time.
             </div>
           </div>
         </motion.div>
