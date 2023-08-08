@@ -11,6 +11,7 @@ import { Container, Navbar, Nav, NavItem } from 'react-bootstrap';
 import ScrollToTop from "react-scroll-to-top";
 import 'aos/dist/aos.css'
 import AOS from 'aos'
+import { motion, useScroll, useSpring } from "framer-motion"
 
 AOS.init({
     duration: 400,
@@ -25,14 +26,20 @@ export default function Main() {
 
     const hashRev = useRef<(HTMLDivElement | null)>(null);
     document.body.style.transition = 'background .15s ease-out';
+    const { scrollYProgress } = useScroll();
 
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 400,
+        damping: 30,
+        restDelta: 0.001
+    });
 
     useEffect(() => {
         hashRev.current!.className = 'cClass cClassShow';
 
 
         //preload img
-        data.forEach((item) => {
+        data.forEach((item: any) => {
             item.img.forEach((imge: any) => {
                 const img = new Image();
                 img.src = imge;
@@ -53,14 +60,15 @@ export default function Main() {
         if (window.innerWidth > 720) await delay(100);
         else await delay(0)
         hashRev.current!.className = 'cClass cClassShow';
-
+        let active: any = document.getElementsByClassName('nactive')[0];
         if (color) {
-            setColorL('rgba(255, 255, 255, 0.55)');
-            document.body.style.backgroundColor = "black";
+            setColorL('#f5e7ff80');
+            document.body.style.backgroundColor = "#0f172a";
             document.body.style.color = "white";
+            console.log(active.style);
         }
         else {
-            setColorL('rgba(0, 0, 0, 0.55)');
+            setColorL('#381e4b80');
             document.body.style.backgroundColor = "unset";
             document.body.style.color = "unset";
         }
@@ -75,7 +83,12 @@ export default function Main() {
     }
 
     return (
+
         <HashRouter>
+            <motion.div
+                className="progress-bar"
+                style={{ scaleX }}
+            />
             <div className="nClass" >
                 <ScrollToTop smooth />
                 <Navbar className="" style={{ marginBottom: '6vh', marginTop: '3vh', height: '11vh', zIndex: 1 }}>
@@ -85,7 +98,7 @@ export default function Main() {
                                 <Logo className='nav-logo' style={{ display: 'block', maxWidth: '115px', minWidth: '32px', height: '105px' }} />
                             </Link>
                         </Navbar.Brand>
-                        <Nav className="justify-content-end ">
+                        <Nav className="justify-content-end nav-bubble px-2">
                             <NavItem ><Link style={{ color: colorL }} onMouseDown={(e) => hideNav(e)} className={`nav-link ${page === 0 && 'nactive'}`} to="/" ><div className='d-none'>0</div>Home</Link></NavItem>
                             <NavItem ><Link style={{ color: colorL }} onMouseDown={(e) => hideNav(e)} className={`nav-link ${page === 1 && 'nactive'}`} to="/portofolio"><div className='d-none'>1</div>Portofolio</Link></NavItem>
                             <NavItem ><Link style={{ color: colorL }} onMouseDown={(e) => hideNav(e)} className={`nav-link ${page === 2 && 'nactive'}`} to="/contact"><div className='d-none'>2</div>Contact</Link></NavItem>
