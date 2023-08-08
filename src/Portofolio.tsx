@@ -383,16 +383,17 @@ export default function Portofolio(props: any) {
                     <div ref={(element: HTMLDivElement) => { titleRef.current[type.id] = element }} className='p-0'>
                     </div>
                   </div>
-                  <div className="d-flex w-100 pt-3">
-                    <div className="pb-1 flex-shrink-0 tags pt-2" >{`${type.tipo[0]}`}</div>
-                    <div className="pb-1 flex-shrink-0 tags pt-2" style={{ marginLeft: 'auto' }}>{`#${type.tipo[1]}`}</div>
-                  </div>
-                  <div className='fake-title mr-auto pt-2 align-self-baseline'><h5>{type.title}</h5></div>
+                  <div className="fake-card-content">
+                    <div className="d-flex w-100 pt-3">
+                      <div className="pb-1 flex-shrink-0 tags pt-2" >{`${type.tipo[0]}`}</div>
+                      <div className="pb-1 flex-shrink-0 tags pt-2" style={{ marginLeft: 'auto' }}>{`#${type.tipo[1]}`}</div>
+                    </div>
+                    <div className='fake-title mr-auto pt-2 align-self-baseline'><h5>{type.title}</h5></div>
 
-                  <div className='fake-content pt-2 w-100'>
-                    {type.content}
-                  </div>
-                  {/* <div className='p-1 d-flex w-100 flex-wrap tags' ref={(element: HTMLDivElement) => { titleRef3.current[type.id] = element }}>
+                    <div className='fake-content pt-2 w-100'>
+                      {type.content}
+                    </div>
+                    {/* <div className='p-1 d-flex w-100 flex-wrap tags' ref={(element: HTMLDivElement) => { titleRef3.current[type.id] = element }}>
                       {type.tipo.map((type2: string, index: number) => (
                         <div className="proj-tags p-1 flex-shrink-0" ref={(element: HTMLDivElement) => {
                           titleRef2.current[type.id] = titleRef2.current[type.id] || [];
@@ -402,8 +403,8 @@ export default function Portofolio(props: any) {
                         </div>
                       ))}
                     </div> */}
-                  <div className="proj-tags tags p-1 pt-4 flex-shrink-0 align-self-end">Read More</div>
-
+                    <div className="proj-tags tags p-1 pt-4 flex-shrink-0 align-self-end">Read More</div>
+                  </div>
                 </div>
               </Col>
             )}
