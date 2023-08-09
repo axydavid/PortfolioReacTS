@@ -1,11 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.0f615fe5.css",
-    "main.js": "./static/js/main.6d6aa15f.js",
+    "main.js": "./static/js/main.ac4a6d35.js",
+    "static/media/deviceMockup.png": "./static/media/deviceMockup.2d94c30b86b7bfaf2072.png",
     "static/media/OceanicBase.png": "./static/media/OceanicBase.a3fcb7b69ff510dfdccb.png",
     "static/media/p0010.jpg": "./static/media/p0010.ff2f4e1fd969b14f7063.jpg",
     "static/media/sales perspective mock.png": "./static/media/sales perspective mock.d24f96bcfff680c61065.png",
+    "static/media/phoneMock2.png": "./static/media/phoneMock2.de355c074b7d12f7012a.png",
     "static/media/cryp-white.png": "./static/media/cryp-white.c56b3fba3ce61cfbf4ca.png",
+    "static/media/DashboardMock.png": "./static/media/DashboardMock.f26ac81df5bcdab2f2f1.png",
+    "static/media/CalendarMock.png": "./static/media/CalendarMock.e87837e10dbf7e9b4a21.png",
     "static/media/cryp - blek.png": "./static/media/cryp - blek.12750a8f7d2ac9c33c6a.png",
     "static/media/business cards.jpg": "./static/media/business cards.0c2d908646d623043120.jpg",
     "static/media/bottle.png": "./static/media/bottle.ff9b5be329f3ec923b6b.png",
@@ -92,10 +96,10 @@
     "static/media/3Items.svg": "./static/media/3Items.9cabce65d5a21cad584519a8f26319fc.svg",
     "static/media/1Items.svg": "./static/media/1Items.fdbab1f5f1d19a7bfcb4ddea553526f7.svg",
     "main.0f615fe5.css.map": "./static/css/main.0f615fe5.css.map",
-    "main.6d6aa15f.js.map": "./static/js/main.6d6aa15f.js.map"
+    "main.ac4a6d35.js.map": "./static/js/main.ac4a6d35.js.map"
   },
   "entrypoints": [
     "static/css/main.0f615fe5.css",
-    "static/js/main.6d6aa15f.js"
+    "static/js/main.ac4a6d35.js"
   ]
 }
