@@ -71,20 +71,13 @@ let i: number = 0;
 export const data = [
   {
     id: i++,
-    title: "SaaS - Crypto White Glaciar",
-    tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping'],
-    content: "This concept showcases a seamless fusion of sleek aesthetics and ergonomic functionality, catering to the modern user's needs with intuitive features.",
-    img: [crypWhite],
-    dri: 'https://dribbble.com/shots/22117252-Product-Design-SaaS-Crypto-White-Glass'
-  },
-  {
-    id: i++,
     title: "Seller Management Platform - Case Study",
     tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping', 'SaaS', 'Mockups', 'Responsive', 'Use Case','A/B Testing', 'Wireframe', 'Usability Research'],
     content: 'The fascinating case study of my collaboration with a budding startup, where they needed innovative solutions, ultimately leading to a series of impactful outcomes.',
     img: [cs, cs1, cs2, cs3],
     case: 'https://dribbble.com/shots/22224413-Seller-Management-Platform-Case-Study'
-  }, {
+  }, 
+  {
     id: i++,
     title: "Dynamic Learning System",
     tipo: ['Development', "Full-Stack", "React", 'SASS', 'NodeJS', 'Express', 'Bootstrap', 'JavaScript', 'TypeScript', 'MySQL'],
@@ -94,11 +87,11 @@ export const data = [
   },
   {
     id: i++,
-    title: "SaaS - Crypto Royal Black A/B Test",
-    tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping', 'A/B Testing'],
-    content: 'Through A/B testing, the dark frosted glass variant of the product demonstrated a significant increase in user engagement and retention compared to the plain version.',
-    img: [crypBlackGlass, crypBlack],
-    dri: 'https://dribbble.com/shots/22115978-Product-Design-SaaS-Crypto'
+    title: "SaaS - Crypto White Glaciar",
+    tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping'],
+    content: "This concept showcases a seamless fusion of sleek aesthetics and ergonomic functionality, catering to the modern user's needs with intuitive features.",
+    img: [crypWhite],
+    dri: 'https://dribbble.com/shots/22117252-Product-Design-SaaS-Crypto-White-Glass'
   },
   {
     id: i++,
@@ -110,11 +103,11 @@ export const data = [
   },
   {
     id: i++,
-    title: "SaaS - Sales Operation",
-    tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping'],
-    content: 'This design presents data in a clear and straightforward manner, enabling sales teams to make informed decisions quickly and effortlessly.',
-    img: [salesMock, sales1, sales2],
-    dri: 'https://dribbble.com/shots/22114029-Product-Design-Sales-Operation-SaaS'
+    title: "SaaS - Crypto Royal Black A/B Test",
+    tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping', 'A/B Testing'],
+    content: 'Through A/B testing, the dark frosted glass variant of the product demonstrated a significant increase in user engagement and retention compared to the plain version.',
+    img: [crypBlackGlass, crypBlack],
+    dri: 'https://dribbble.com/shots/22115978-Product-Design-SaaS-Crypto'
   },
   {
     id: i++,
@@ -127,11 +120,11 @@ export const data = [
   },
   {
     id: i++,
-    title: "Isometric Product Showcase",
-    tipo: ['Design', "Adobe Suite", 'UI/UX', 'Prototyping', 'Responsive', 'Mockups', 'Advertisement'],
-    content: 'This concept captivates viewers with its elegant simplicity, presenting the products trough various themes and moods, offering a visually engaging experience that caters to diverse preferences and aesthetics.',
-    img: [iso, iso2, iso3],
-    dri: 'https://dribbble.com/shots/22095368-Isometric-Product-Showcase'
+    title: "SaaS - Sales Operation",
+    tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping'],
+    content: 'This design presents data in a clear and straightforward manner, enabling sales teams to make informed decisions quickly and effortlessly.',
+    img: [salesMock, sales1, sales2],
+    dri: 'https://dribbble.com/shots/22114029-Product-Design-Sales-Operation-SaaS'
   },
   {
     id: i++,
@@ -143,11 +136,11 @@ export const data = [
   },
   {
     id: i++,
-    title: "Other Designs",
-    tipo: ['Design', "Adobe Suite", 'Prototyping', 'Responsive', 'Mockups', 'Advertisement'],
-    content: 'Various design projects showcasing a versatile range of captivating styles and solutions that cater to diverse clients and industries.',
-    img: [mis, mis2, mis3, mis4, mis5, mis6, mis7, mis8],
-    dri: 'https://dribbble.com/axy_david'
+    title: "Isometric Product Showcase",
+    tipo: ['Design', "Adobe Suite", 'UI/UX', 'Prototyping', 'Responsive', 'Mockups', 'Advertisement'],
+    content: 'This concept captivates viewers with its elegant simplicity, presenting the products trough various themes and moods, offering a visually engaging experience that caters to diverse preferences and aesthetics.',
+    img: [iso, iso2, iso3],
+    dri: 'https://dribbble.com/shots/22095368-Isometric-Product-Showcase'
   },
   {
     id: i++,
@@ -157,6 +150,15 @@ export const data = [
     img: [quiz, quiz1, quiz2],
     git: 'https://github.com/axydavid/QuizWorld'
   },
+  {
+    id: i++,
+    title: "Other Designs",
+    tipo: ['Design', "Adobe Suite", 'Prototyping', 'Responsive', 'Mockups', 'Advertisement'],
+    content: 'Various design projects showcasing a versatile range of captivating styles and solutions that cater to diverse clients and industries.',
+    img: [mis, mis2, mis3, mis4, mis5, mis6, mis7, mis8],
+    dri: 'https://dribbble.com/axy_david'
+  },
+
   {
     id: i++,
     title: ".NET Web Application with C# and CSS",
