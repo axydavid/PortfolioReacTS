@@ -200,7 +200,7 @@ export default function Portofolio(props: any) {
                   &nbsp;GitHub</Button>
               }
               {
-                books.dri !== undefined && <Button className='fw-bold btn-blu' style={{ minWidth: '130px', borderRadius: '50px', borderWidth: '2px', color: 'white' }} size="sm" variant="outline-primary" onClick={(e) => {
+                books.case !== undefined && <Button className='fw-bold btn-blu' style={{ minWidth: '160px', borderRadius: '50px', borderWidth: '2px', color: 'white' }} size="sm" variant="outline-primary" onClick={(e) => {
                   e.preventDefault();
                   window.open(books.case);
                 }}>
