@@ -81,7 +81,7 @@ export const data = [
     id: i++,
     title: "Seller Management Platform - Case Study",
     tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping', 'SaaS', 'Mockups', 'Responsive', 'Use Case','A/B Testing', 'Wireframe', 'Usability Research'],
-    content: 'The fascinating case study of my collaboration with a budding startup, where they needed inventive solutions, ultimately leading to a series of impactful outcomes.',
+    content: 'The fascinating case study of my collaboration with a budding startup, where they needed innovative solutions, ultimately leading to a series of impactful outcomes.',
     img: [cs, cs1, cs2, cs3],
     case: 'https://dribbble.com/shots/22224413-Seller-Management-Platform-Case-Study'
   }, {
