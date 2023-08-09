@@ -498,7 +498,7 @@ $body-color: rgba(3, 3, 3, 0.85);
     width: 100%;
     backdrop-filter: blur(10px);
     border-radius: $border-radius-base !important;
-
+    overflow: hidden;
     & img {
         object-fit: cover;
         max-height: 350px;
