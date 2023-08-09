@@ -202,6 +202,14 @@ export default function Portofolio(props: any) {
               {
                 books.dri !== undefined && <Button className='fw-bold btn-blu' style={{ minWidth: '130px', borderRadius: '50px', borderWidth: '2px', color: 'white' }} size="sm" variant="outline-primary" onClick={(e) => {
                   e.preventDefault();
+                  window.open(books.case);
+                }}>
+                  <img className="position-relative imgButton" src={dribbble} style={{ maxWidth: '26px', top: "-2px" }} />
+                  &nbsp;Case Study</Button>
+              }
+                            {
+                books.dri !== undefined && <Button className='fw-bold btn-blu' style={{ minWidth: '130px', borderRadius: '50px', borderWidth: '2px', color: 'white' }} size="sm" variant="outline-primary" onClick={(e) => {
+                  e.preventDefault();
                   window.open(books.dri);
                 }}>
                   <img className="position-relative imgButton" src={dribbble} style={{ maxWidth: '26px', top: "-2px" }} />
