@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3191385b.css",
-    "main.js": "./static/js/main.789f5144.js",
+    "main.js": "./static/js/main.10f5b30b.js",
     "static/media/deviceMockup.png": "./static/media/deviceMockup.2d94c30b86b7bfaf2072.png",
     "static/media/OceanicBase.png": "./static/media/OceanicBase.a3fcb7b69ff510dfdccb.png",
     "static/media/p0010.jpg": "./static/media/p0010.ff2f4e1fd969b14f7063.jpg",
@@ -43,6 +43,7 @@
     "static/media/AgencyLogo.png": "./static/media/AgencyLogo.49ebfce594dabf0ceb78.png",
     "static/media/DynamicTextProj1.jpg": "./static/media/DynamicTextProj1.6a929beb98724599fb54.jpg",
     "static/media/DynamicTextProj2.jpg": "./static/media/DynamicTextProj2.6c3d4eb90a79798ddaab.jpg",
+    "static/media/Resume-Axy-David.pdf": "./static/media/Resume-Axy-David.81f4b44cb273a12e590d.pdf",
     "static/media/unityGame3.png": "./static/media/unityGame3.706f3c88e779e4c76bca.png",
     "static/media/selfieS.png": "./static/media/selfieS.9d877ef4e24ad7e63273.png",
     "static/media/selfieN.png": "./static/media/selfieN.16986eb82abffe4b17d4.png",
@@ -50,7 +51,6 @@
     "static/media/unityGame.jpg": "./static/media/unityGame.ed139dd4ada92417d693.jpg",
     "static/media/totalReward2.jpg": "./static/media/totalReward2.39a7f2be98f89d62cd9a.jpg",
     "static/media/totalReward.jpg": "./static/media/totalReward.afcbf7a1535ad39b02d9.jpg",
-    "static/media/Resume-Axy_David.pdf": "./static/media/Resume-Axy_David.6c58185f83102920d6df.pdf",
     "static/media/portofolio.jpg": "./static/media/portofolio.166ce7db9ab80bb74171.jpg",
     "static/media/portofolio2.jpg": "./static/media/portofolio2.623cc44d46105c9f827d.jpg",
     "static/media/mock5.png": "./static/media/mock5.b4c497e2fd33a3bedde9.png",
@@ -96,10 +96,10 @@
     "static/media/3Items.svg": "./static/media/3Items.9cabce65d5a21cad584519a8f26319fc.svg",
     "static/media/1Items.svg": "./static/media/1Items.fdbab1f5f1d19a7bfcb4ddea553526f7.svg",
     "main.3191385b.css.map": "./static/css/main.3191385b.css.map",
-    "main.789f5144.js.map": "./static/js/main.789f5144.js.map"
+    "main.10f5b30b.js.map": "./static/js/main.10f5b30b.js.map"
   },
   "entrypoints": [
     "static/css/main.3191385b.css",
-    "static/js/main.789f5144.js"
+    "static/js/main.10f5b30b.js"
   ]
 }
