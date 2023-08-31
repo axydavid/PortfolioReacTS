@@ -391,7 +391,7 @@ export default function Portofolio(props: any) {
                     <div ref={(element: HTMLDivElement) => { titleRef.current[type.id] = element }} className='p-0'>
                     </div>
                   </div>
-                  <div className="fake-card-content">
+                  <div className="fake-card-content w-100">
                     <div className="d-flex w-100 pt-3">
                       <div className="pb-1 flex-shrink-0 tags pt-2" >{`${type.tipo[0]}`}</div>
                       <div className="pb-1 flex-shrink-0 tags pt-2" style={{ marginLeft: 'auto' }}>{`#${type.tipo[1]}`}</div>
