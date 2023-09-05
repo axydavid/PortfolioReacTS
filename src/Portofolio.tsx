@@ -239,63 +239,28 @@ export default function Portofolio(props: any) {
     );
   }
 
-  const onEnter = (e: React.MouseEvent<HTMLElement>, id: number) => {
-    // e.preventDefault();
-    // if (titleRef !== null) titleRef.current[id]!.style.height = `${titleRef.current[id]!.scrollHeight - 1}px`;
-    // if (titleRef3 !== null) titleRef3.current[id]!.className = 'pe-none text-center p-1 hid-box4';
-    // titleRef2.current[id]!.map(item => {
-    //   return item!.style.opacity = `.9`;
-    // });
-    // return setShowResults(id);
-  }
-  const onExit = (e: React.MouseEvent<HTMLElement>, id: number) => {
-    // e.preventDefault();
-    // if (titleRef !== null) titleRef.current[id]!.style.height = '48px';
-    // if (titleRef3 !== null) titleRef3.current[id]!.className = 'pe-none text-center p-1 hid-box5';
-    // titleRef2.current[id]!.map(item => {
-    //   return item!.style.opacity = `0`;
-    // });
-    // return setShowResults(id);
-  }
   const onClick = async () => {
     if (titleRef4 !== null) {
       titleRef4.current.backdrop.style.opacity = `0`;
       titleRef4.current.dialog.className = `fade kool modal`;
     }
-    //titleRef4.current.style.display = `none`;
     await delay(250);
     setModalShow(false)
     await delay(15);
     colRef.current!.map(item => {
-      // if (item !== null) return item.className = `p-0 mClass mClassShow`;
     });
   }
 
   const onCleck = async (data: any) => {
 
     if (!isMobile) {
-      // if (titleRef !== null) titleRef.current[data.id]!.style.height = '48px';
-      // if (titleRef3 !== null) titleRef3.current[data.id]!.className = 'pe-none text-center p-1 hid-box5';
-      // titleRef2.current[data.id]!.map(item => {
-      //   return item!.style.opacity = `0`;
-      // });
-
       await delay(140);
     }
     setModalShow(true);
     updateBooks(data);
 
   }
-  // [
-  //   { text: 'Hey', value: 20 },
-  //   { text: 'lol', value: 100 },
-  //   { text: 'first impression', value: 30 },
-  //   { text: 'duck', value: 20 },
-  // ];
-  // buttons2 &&
-  // buttons2.map((type, index) => (
-  //   data1.push({text:type, value:Math.floor(Math.random() * 100) + 20})
-  // ));
+ 
   var sizeCache = '0px';
   var wordCache: any = 0;
   var activeCache: any = 0;
@@ -384,7 +349,7 @@ export default function Portofolio(props: any) {
             media: [576, 768, 1200],
           }}
             render={type => ( //{ cursor: 'pointer'}, 
-              <Col ref={(element: HTMLDivElement) => { colRef.current[type.id] = element }} className='p-0 mClass fake-container' onClick={() => onCleck(type)} onMouseEnter={(e) => onEnter(e, type.id)} onMouseLeave={(e) => onExit(e, type.id)}>
+              <Col ref={(element: HTMLDivElement) => { colRef.current[type.id] = element }} className='p-0 mClass fake-container' onClick={() => onCleck(type)}>
                 <div className='m-auto fake-card' key={type.id} >
                   <img src={type.img[0]} />
                   <div className='d-flex flex-column p-0 overflow-hidden' >
@@ -401,16 +366,6 @@ export default function Portofolio(props: any) {
                     <div className='fake-content pt-2 w-100'>
                       {type.content}
                     </div>
-                    {/* <div className='p-1 d-flex w-100 flex-wrap tags' ref={(element: HTMLDivElement) => { titleRef3.current[type.id] = element }}>
-                      {type.tipo.map((type2: string, index: number) => (
-                        <div className="proj-tags p-1 flex-shrink-0" ref={(element: HTMLDivElement) => {
-                          titleRef2.current[type.id] = titleRef2.current[type.id] || [];
-                          titleRef2.current[type.id][index] = element;
-                        }}>
-                          {`#${type2}`}
-                        </div>
-                      ))}
-                    </div> */}
                     <div className="proj-tags tags p-1 pt-4 flex-shrink-0 align-self-end">Read More</div>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ import layerp2 from './img/layerp2.svg'
 import layerp3 from './img/layerp3.svg'
 import layer2 from './img/layer2.svg'
 import layer3 from './img/layer3.svg'
-import chat from './img/email.svg'
+import portfolio from './img/portfolio3.svg'
 import cv from './Resume-Axy-David.pdf';
 import { Container, Col, Card, Row, Button } from 'react-bootstrap';
 import { useState, useEffect, useRef } from "react";
@@ -172,7 +172,7 @@ function Home(props: any) {
                 <Row className="justify-content-center mb-4 " >
                   <img className={'imgTri'} src={design} style={{ maxHeight: '48px', width: 'auto' }} />
                 </Row>
-                <h5 className="fw-bold mb-2">Designer</h5>
+                <h5 className="fw-bold mb-2">Design</h5>
                 <p>Committed to crafting captivating user-centric experiences</p>
                 <p className="text-primary fw-bold  mt-5 mb-1">Concepts:</p>
                 <p>Product Design, UX, UI, Web, Apps</p>
@@ -191,7 +191,7 @@ function Home(props: any) {
                 <Row className="justify-content-center mb-4" >
                   <img className={'imgTri'} src={frontEnd} style={{ maxHeight: '48px', width: 'auto' }} />
                 </Row>
-                <h5 className="fw-bold mb-2">Front-end Developer</h5>
+                <h5 className="fw-bold mb-2">Front-end Development</h5>
                 <p>Bringing projects to life within the browser environment</p>
                 <p className="text-primary fw-bold mt-5 mb-1">Languages:</p>
                 <p>HTML, CSS, JavaScript, TypeScript</p>
@@ -210,7 +210,7 @@ function Home(props: any) {
                 <Row className="justify-content-center mb-4 " >
                   <img className={'imgTriL'} src={backEnd} style={{ maxHeight: '60px', width: 'auto', marginTop: '-11px' }} />
                 </Row>
-                <h5 className="fw-bold mb-2">Back-end Developer</h5>
+                <h5 className="fw-bold mb-2">Back-end Development</h5>
                 <p>Crafting databases and overseeing the flow exchange between them and users</p>
                 <p className="text-primary fw-bold mt-5 mb-1">Languages:</p>
                 <p>PHP, Python, Java, JavaScript</p>
@@ -274,15 +274,22 @@ function Home(props: any) {
                   <h3 className="title m-auto">Seize the opportunity</h3>
                 </div>
                 <div className="level-item d-flex mx-auto">
-                  <p className="m-auto text-center" style={{ fontSize: '18px' }}>Take your vision to the next level! <br />Here's my <a href={cv} ><b style={{ fontWeight: '600' }} >CV</b></a>, don't hesitate to contact me!</p>
+                  <p className="m-auto text-center" style={{ fontSize: '18px' }}>Take your vision to the next level! 
+                  <br />Here's my <a href={cv} ><b style={{ fontWeight: '600' }} >CV</b></a>, don't hesitate to <a href={'#/contact'} onClick={(e) => {
+                    e.preventDefault();
+                    navigate(`/contact`);
+                  }}><b style={{ fontWeight: '600' }} >Reach Out!</b></a>
+                  </p>
                 </div>
                 <div className="level-item d-flex ">
                   <Button style={{ minWidth: '200px', maxHeight: '54px', borderRadius: '50px', borderWidth: '2px', fontWeight: 'bold', color: 'white' }} className="m-auto" variant="outline-primary" onClick={(e) => {
                     e.preventDefault();
-                    navigate(`/contact`);
+                    navigate(`/portfolio`);
+                    window.scrollTo(0, 0);
+
                   }}>
-                    <img className="position-relative imgButton1" src={chat} style={{ maxWidth: '26px', top: "-2px", }} />
-                    &nbsp;Let's Chat!
+                    <img className="position-relative imgButton1" src={portfolio} style={{ maxWidth: '26px', top: "-2px", }} />
+                    &nbsp;Portfolio
                   </Button>
                 </div>
               </div>
