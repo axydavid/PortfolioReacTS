@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3191385b.css",
-    "main.js": "./static/js/main.dedbd4a0.js",
+    "main.js": "./static/js/main.8e93646f.js",
     "static/media/deviceMockup.png": "./static/media/deviceMockup.2d94c30b86b7bfaf2072.png",
     "static/media/OceanicBase.png": "./static/media/OceanicBase.a3fcb7b69ff510dfdccb.png",
     "static/media/p0010.jpg": "./static/media/p0010.ff2f4e1fd969b14f7063.jpg",
@@ -43,7 +43,7 @@
     "static/media/AgencyLogo.png": "./static/media/AgencyLogo.49ebfce594dabf0ceb78.png",
     "static/media/DynamicTextProj1.jpg": "./static/media/DynamicTextProj1.6a929beb98724599fb54.jpg",
     "static/media/DynamicTextProj2.jpg": "./static/media/DynamicTextProj2.6c3d4eb90a79798ddaab.jpg",
-    "static/media/Resume-Axy-David.pdf": "./static/media/Resume-Axy-David.0b68e71c31b82f1a9d28.pdf",
+    "static/media/Resume-Axy-David.pdf": "./static/media/Resume-Axy-David.167542c03bb92d74a8ac.pdf",
     "static/media/unityGame3.png": "./static/media/unityGame3.706f3c88e779e4c76bca.png",
     "static/media/selfieS.png": "./static/media/selfieS.9d877ef4e24ad7e63273.png",
     "static/media/selfieN.png": "./static/media/selfieN.16986eb82abffe4b17d4.png",
@@ -96,10 +96,10 @@
     "static/media/3Items.svg": "./static/media/3Items.9cabce65d5a21cad584519a8f26319fc.svg",
     "static/media/1Items.svg": "./static/media/1Items.fdbab1f5f1d19a7bfcb4ddea553526f7.svg",
     "main.3191385b.css.map": "./static/css/main.3191385b.css.map",
-    "main.dedbd4a0.js.map": "./static/js/main.dedbd4a0.js.map"
+    "main.8e93646f.js.map": "./static/js/main.8e93646f.js.map"
   },
   "entrypoints": [
     "static/css/main.3191385b.css",
-    "static/js/main.dedbd4a0.js"
+    "static/js/main.8e93646f.js"
   ]
 }
