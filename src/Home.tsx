@@ -12,7 +12,7 @@ import layerp3 from './img/layerp3.svg'
 import layer2 from './img/layer2.svg'
 import layer3 from './img/layer3.svg'
 import portfolio from './img/portfolio3.svg'
-import cv from './Resume-Axy-David.pdf';
+import cv from './Resume-Axy-David.design.pdf';
 import { Container, Col, Card, Row, Button } from 'react-bootstrap';
 import { useState, useEffect, useRef } from "react";
 import ReactTypingEffect from 'react-typing-effect';
