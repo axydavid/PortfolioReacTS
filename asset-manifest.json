@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.3191385b.css",
-    "main.js": "./static/js/main.7a63afbc.js",
+    "main.css": "./static/css/main.fbd7dbd3.css",
+    "main.js": "./static/js/main.208f7cf2.js",
     "static/media/deviceMockup.png": "./static/media/deviceMockup.2d94c30b86b7bfaf2072.png",
     "static/media/OceanicBase.png": "./static/media/OceanicBase.a3fcb7b69ff510dfdccb.png",
     "static/media/p0010.jpg": "./static/media/p0010.ff2f4e1fd969b14f7063.jpg",
@@ -9,6 +9,7 @@
     "static/media/phoneMock2.png": "./static/media/phoneMock2.de355c074b7d12f7012a.png",
     "static/media/cryp-white.png": "./static/media/cryp-white.c56b3fba3ce61cfbf4ca.png",
     "static/media/DashboardMock.png": "./static/media/DashboardMock.f26ac81df5bcdab2f2f1.png",
+    "static/media/CalendarPopupMock.png": "./static/media/CalendarPopupMock.697d737c67d9e56fa834.png",
     "static/media/CalendarMock.png": "./static/media/CalendarMock.e87837e10dbf7e9b4a21.png",
     "static/media/cryp - blek.png": "./static/media/cryp - blek.12750a8f7d2ac9c33c6a.png",
     "static/media/business cards.jpg": "./static/media/business cards.0c2d908646d623043120.jpg",
@@ -40,6 +41,7 @@
     "static/media/collection1.jpg": "./static/media/collection1.f43c4f8cbb066eb8dc39.jpg",
     "static/media/oonio.png": "./static/media/oonio.7c24bafa477b888d3e03.png",
     "static/media/mock2.jpg": "./static/media/mock2.c44292f3fec8e9288513.jpg",
+    "static/media/Resume-Axy-David.design.pdf": "./static/media/Resume-Axy-David.design.c71170be010df4d5402a.pdf",
     "static/media/AgencyLogo.png": "./static/media/AgencyLogo.49ebfce594dabf0ceb78.png",
     "static/media/DynamicTextProj1.jpg": "./static/media/DynamicTextProj1.6a929beb98724599fb54.jpg",
     "static/media/DynamicTextProj2.jpg": "./static/media/DynamicTextProj2.6c3d4eb90a79798ddaab.jpg",
@@ -59,7 +61,6 @@
     "static/media/Sales.png": "./static/media/Sales.f4f335c36fba7f5a3255.png",
     "static/media/professional.png": "./static/media/professional.773d2c5bcd9225e3a120.png",
     "static/media/yourphoner.png": "./static/media/yourphoner.df19a5ecf27e345159f8.png",
-    "static/media/Resume-Axy-David.design.pdf": "./static/media/Resume-Axy-David.design.f3bb11aff469f6be3396.pdf",
     "static/media/christ.jpg": "./static/media/christ.f3e619be8cac863f7c4e.jpg",
     "static/media/stellar.png": "./static/media/stellar.ca5b41e368e36a7dcbe5.png",
     "static/media/firefoxUI.jpg": "./static/media/firefoxUI.789a9453ebe4d16b1dff.jpg",
@@ -95,11 +96,11 @@
     "static/media/2Items.svg": "./static/media/2Items.c0a9d8905cb07ed0efbbba731bade0be.svg",
     "static/media/3Items.svg": "./static/media/3Items.9cabce65d5a21cad584519a8f26319fc.svg",
     "static/media/1Items.svg": "./static/media/1Items.fdbab1f5f1d19a7bfcb4ddea553526f7.svg",
-    "main.3191385b.css.map": "./static/css/main.3191385b.css.map",
-    "main.7a63afbc.js.map": "./static/js/main.7a63afbc.js.map"
+    "main.fbd7dbd3.css.map": "./static/css/main.fbd7dbd3.css.map",
+    "main.208f7cf2.js.map": "./static/js/main.208f7cf2.js.map"
   },
   "entrypoints": [
-    "static/css/main.3191385b.css",
-    "static/js/main.7a63afbc.js"
+    "static/css/main.fbd7dbd3.css",
+    "static/js/main.208f7cf2.js"
   ]
 }
