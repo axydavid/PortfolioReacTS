@@ -24,8 +24,9 @@ import "swiper/css";
 import "swiper/css/effect-creative";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { data2 } from "./Data";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
+import { data2, data } from "./Data";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+
 
 function Home(props: any) {
   const [top1, setTop] = useState('0px');
@@ -67,14 +68,14 @@ function Home(props: any) {
   let scaleProgress = useTransform(scrollYProgress1, [0, 1], [0, 2400]);
   let scaleProgressXY = useTransform(scrollYProgress1, [0, 1], [0, 2400]);
 
-  let scrollY2Progress1 = useSpring(scroll2.scrollYProgress, { stiffness: 1250, damping: 100 })
-  let scaleHeight = useTransform(scrollY2Progress1, [0, 0.97, 1], [0, -1250, -1650]);
-  let scaleOpacity = useTransform(scrollY2Progress1, [0, 0.01], [1, 0]);
+  let scrollY2Progress1 = useSpring(scroll2.scrollYProgress, { stiffness: 1000, damping: 100 })
+  let scaleHeight = useTransform(scrollY2Progress1, [0, 0.01, 0.5], [0, -400, -3000]);
+  let scaleOpacity = useTransform(scrollY2Progress1, [0, 0.02], [1, 0]);
   let scaleOpacity1 = useTransform(scrollY2Progress1, [0.6, 1], [0, -250]);
   let scaleZIndex = useTransform(scrollY2Progress1, [0.85, 0.86, 1], [-1, 0, 1]);
 
   let scrollFade = useSpring(scroll3.scrollYProgress, { stiffness: 1250, damping: 100 })
-  let scaleFade = useTransform(scrollFade, [0, 0.2,0.4,.7], [1,1, .5,0]);
+  let scaleFade = useTransform(scrollFade, [0, 0.2, 0.4, .7], [1, 1, .5, 0]);
 
 
   return (<div style={{ overflow: 'clip' }}>
@@ -108,7 +109,7 @@ function Home(props: any) {
         </motion.div>
 
       </div>
-      <motion.div style={{opacity:scaleOpacity}}>
+      <motion.div style={{ opacity: scaleOpacity }}>
         <section className="d-flex flex-column" style={{ height: '80vh', color: 'rgba(3, 3, 3, 0.85)' }}>
 
           <Container className='d-flex flex-column h-100'>
@@ -142,7 +143,7 @@ function Home(props: any) {
           </div>
 
         </section>
-        </motion.div>
+      </motion.div>
     </div>
     <motion.div ref={ref} />
 
@@ -161,13 +162,81 @@ function Home(props: any) {
         <img src={layer2} className='w-100 ' style={{ zIndex: -1 }} />
       </div>
 
+      <Container className="" style={{ marginTop: "-10rem", fontSize: "17px", borderWidth: "1px" }}>
+        <motion.div ref={ref2} />
 
-      <Container style={{ marginTop: "-10rem", fontSize: "17px", borderWidth: "1px" }}>
-      <motion.div ref={ref2} />
+        <motion.div className='position-relative d-flex flex-column ' style={{ top: scaleOpacity1 }} >
 
-        <motion.div className='position-relative ' style={{ top: scaleOpacity1 }} >
-          <Card className=" br-30 cardServe">
-            <div className="d-flex flex-wrap lh-base sCardC">
+          <Card className=" br-30 cardServe mClass fake-container-cl mClassShow align-self-center " style={{ maxWidth: "1000px" }}>
+            <a className='text-decoration-none ' href={data[0].case}>
+              <div className="d-flex flex-wrap lh-base sCardC">
+                <div className=" p-5 w-100 d-flex flex-column flex-sm-row" style={{}} >
+                  <Col className='main-port-pic'>
+                    <img className='imgTri br-30 w-100 mb-4 mb-sm-0' src={data[0].img[0]} style={{}} />
+                  </Col>
+                  <Col className='d-flex flex-column ps-0 ps-sm-5 content-front-card'>
+                    <h5 className="fw-bold mb-3 ">{data[0].title}</h5>
+                    <p className="">{data[0].content}</p>
+                    <div className="fw-bold mt-auto ms-auto " style={{ color: '#6a2fea' }}>Read More</div>
+                  </Col>
+                </div>
+              </div>
+            </a>
+          </Card>
+
+          <Card className=" br-30 cardServe mClass fake-container-cl mClassShow align-self-center " style={{ maxWidth: "1000px" }}>
+            <a className='text-decoration-none ' href={data[1].case}>
+              <div className="d-flex flex-wrap lh-base sCardC">
+                <div className=" p-5 w-100 d-flex flex-column flex-sm-row" style={{}} >
+                  <Col className='main-port-pic'>
+                    <img className='imgTri br-30 w-100 mb-4 mb-sm-0' src={data[1].img[0]} style={{}} />
+                  </Col>
+                  <Col className='d-flex flex-column ps-0 ps-sm-5 content-front-card'>
+                    <h5 className="fw-bold mb-3 ">{data[1].title}</h5>
+                    <p className="">{data[1].content}</p>
+                    <div className="fw-bold mt-auto ms-auto " style={{ color: '#6a2fea' }}>Read More</div>
+                  </Col>
+                </div>
+              </div>
+            </a>
+          </Card>
+
+          <Card className=" br-30 cardServe mClass fake-container-cl mClassShow align-self-center " style={{ maxWidth: "1000px" }}>
+            <a className='text-decoration-none ' href={data[6].dri}>
+              <div className="d-flex flex-wrap lh-base sCardC">
+                <div className=" p-5 w-100 d-flex flex-column flex-sm-row" style={{}} >
+                  <Col className='main-port-pic'>
+                    <img className='imgTri br-30 w-100 mb-4 mb-sm-0' src={data[6].img[0]} style={{}} />
+                  </Col>
+                  <Col className='d-flex flex-column ps-0 ps-sm-5 content-front-card'>
+                    <h5 className="fw-bold mb-3 ">{data[6].title}</h5>
+                    <p className="">{data[6].content}</p>
+                    <div className="fw-bold mt-auto ms-auto " style={{ color: '#6a2fea' }}>Read More</div>
+                  </Col>
+                </div>
+              </div>
+            </a>
+          </Card>
+
+          <Card className=" br-30 cardServe mClass fake-container-cl mClassShow align-self-center " style={{ maxWidth: "1000px" }}>
+            <a className='text-decoration-none ' href={data[3].dri}>
+              <div className="d-flex flex-wrap lh-base sCardC">
+                <div className=" p-5 w-100 d-flex flex-column flex-sm-row" style={{}} >
+                  <Col className='main-port-pic'>
+                    <img className='imgTri br-30 w-100 mb-4 mb-sm-0' src={data[3].img[0]} style={{}} />
+                  </Col>
+                  <Col className='d-flex flex-column ps-0 ps-sm-5 content-front-card'>
+                    <h5 className="fw-bold mb-3 ">{data[3].title}</h5>
+                    <p className="">{data[3].content}</p>
+                    <div className="fw-bold mt-auto ms-auto " style={{ color: '#6a2fea' }}>Read More</div>
+                  </Col>
+                </div>
+              </div>
+            </a>
+          </Card>
+
+          <Card className=" br-30  ">
+            <Row>
               <Col className="text-center p-5" >
                 <Row className="justify-content-center mb-4 " >
                   <img className={'imgTri'} src={design} style={{ maxHeight: '48px', width: 'auto' }} />
@@ -225,10 +294,10 @@ function Home(props: any) {
                 </ul>
 
               </Col>
-            </div>
-            <motion.div ref={ref1} />
-
+            </Row>
           </Card>
+
+
         </motion.div>
 
       </Container>
@@ -260,6 +329,8 @@ function Home(props: any) {
 
       </Container>
     </section>
+
+    <motion.div ref={ref1} />
     <img src={layer3} className='w-100' style={{ zIndex: -1 }} />
 
     <section className="visitSec" >
@@ -269,16 +340,16 @@ function Home(props: any) {
 
           <Card bg={'dark'} key={'dark'} text={'white'} className="mb-2 cerd br-30" >
             <Card.Body className="m-4" >
-              <div className="align-content-center d-flex">
+              <div className="align-content-center d-flex flex-column flex-sm-row gap-4 gap-sm-0 ">
                 <div className="level-item d-flex">
                   <h3 className="title m-auto">Seize the opportunity</h3>
                 </div>
                 <div className="level-item d-flex mx-auto">
-                  <p className="m-auto text-center" style={{ fontSize: '18px' }}>Take your vision to the next level! 
-                  <br />Here's my <a href={cv} ><b style={{ fontWeight: '600' }} >CV</b></a>, don't hesitate to <a href={'#/contact'} onClick={(e) => {
-                    e.preventDefault();
-                    navigate(`/contact`);
-                  }}><b style={{ fontWeight: '600' }} >Reach Out!</b></a>
+                  <p className="m-auto text-center" style={{ fontSize: '18px' }}>Take your vision to the next level!
+                    <br />Here's my <a href={cv} ><b style={{ fontWeight: '600' }} >CV</b></a>, don't hesitate to <a href={'#/contact'} onClick={(e) => {
+                      e.preventDefault();
+                      navigate(`/contact`);
+                    }}><b style={{ fontWeight: '600' }} >Reach Out!</b></a>
                   </p>
                 </div>
                 <div className="level-item d-flex ">

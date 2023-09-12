@@ -13,8 +13,6 @@ import { Masonry } from 'react-plock';
 import { useNavigate } from "react-router-dom";
 import WordCloud from 'react-d3-cloud';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
 
 import "swiper/css";
 import "swiper/css/effect-creative";

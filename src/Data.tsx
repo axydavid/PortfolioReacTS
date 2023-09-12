@@ -53,6 +53,7 @@ import cs from './img/portDesign/deviceMockup.png'
 import cs1 from './img/portDesign/phoneMock2.png'
 import cs2 from './img/portDesign/DashboardMock.png'
 import cs3 from './img/portDesign/CalendarMock.png'
+import crm from './img/portDesign/CalendarPopupMock.png'
 
 
 export const data4 = [{ text: 'Design', value: 230 }, { text: 'Figma', value: 70 }, { text: 'Use Case', value: 40 },
@@ -69,10 +70,18 @@ export const data3 = [{ text: 'Development', value: 210 }, { text: 'Full-Stack',
 
 let i: number = 0;
 export const data = [
+    {
+    id: i++,
+    title: "Customer Management System - Case Study",
+    tipo: ['Design', "Product Design", "Figma", "CRM", "Adobe Suite", 'UI/UX', 'Prototyping', 'SaaS', 'Mockups', 'Responsive', 'Use Case', 'Wireframe', 'Usability Research'],
+    content: 'A company specializing in meeting planning and sales tasks, approached me with a big challenge - they wanted me to create a user-friendly website and CRM System from the ground up.',
+    img: [crm],
+    case: 'https://dribbble.com/shots/22538831-Customer-Relationship-Management-System-Case-Study'
+  }, 
   {
     id: i++,
     title: "Seller Management Platform - Case Study",
-    tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping', 'SaaS', 'Mockups', 'Responsive', 'Use Case','A/B Testing', 'Wireframe', 'Usability Research'],
+    tipo: ['Design', "Product Design", "Figma", "Adobe Suite", 'UI/UX', 'Prototyping', 'SaaS', 'Mockups', 'Responsive', 'Use Case','A/B Testing', 'Wireframe', 'Usability Research'],
     content: 'The fascinating case study of my collaboration with a budding startup, where they needed innovative solutions, ultimately leading to a series of impactful outcomes.',
     img: [cs, cs1, cs2, cs3],
     case: 'https://dribbble.com/shots/22224413-Seller-Management-Platform-Case-Study'
@@ -87,10 +96,10 @@ export const data = [
   },
   {
     id: i++,
-    title: "SaaS - Crypto White Glaciar",
+    title: "SaaS - Crypto Fintech",
     tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping'],
-    content: "This concept showcases a seamless fusion of sleek aesthetics and ergonomic functionality, catering to the modern user's needs with intuitive features.",
-    img: [crypWhite],
+    content: "User-friendly platform for managing cryptocurrency investments, catering to novice and experienced users, empowering informed financial decisions for all levels of investors.",
+    img: [crypWhite, crypBlackGlass, crypBlack],
     dri: 'https://dribbble.com/shots/22117252-Product-Design-SaaS-Crypto-White-Glass'
   },
   {
@@ -100,14 +109,6 @@ export const data = [
     content: 'My portfolio page, developed utilizing cutting-edge technologies.',
     img: [port, port2],
     git: 'https://github.com/axydavid/PortfolioReacTS'
-  },
-  {
-    id: i++,
-    title: "SaaS - Crypto Royal Black A/B Test",
-    tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping', 'A/B Testing'],
-    content: 'Through A/B testing, the dark frosted glass variant of the product demonstrated a significant increase in user engagement and retention compared to the plain version.',
-    img: [crypBlackGlass, crypBlack],
-    dri: 'https://dribbble.com/shots/22115978-Product-Design-SaaS-Crypto'
   },
   {
     id: i++,
@@ -122,7 +123,7 @@ export const data = [
     id: i++,
     title: "SaaS - Sales Operation",
     tipo: ['Design', "Product Design", "Figma", "SaaS", "Adobe Suite", 'UI/UX', 'Prototyping'],
-    content: 'This design presents data in a clear and straightforward manner, enabling sales teams to make informed decisions quickly and effortlessly.',
+    content: 'This design presents data in a clear and straightforward manner, enabling sales teams to swiftly comprehend the key performance indicators without undue complexity.',
     img: [salesMock, sales1, sales2],
     dri: 'https://dribbble.com/shots/22114029-Product-Design-Sales-Operation-SaaS'
   },
