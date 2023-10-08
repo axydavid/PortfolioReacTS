@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.fbd7dbd3.css",
-    "main.js": "./static/js/main.208f7cf2.js",
+    "main.css": "./static/css/main.dcc6cb03.css",
+    "main.js": "./static/js/main.5c721d56.js",
     "static/media/deviceMockup.png": "./static/media/deviceMockup.2d94c30b86b7bfaf2072.png",
     "static/media/OceanicBase.png": "./static/media/OceanicBase.a3fcb7b69ff510dfdccb.png",
     "static/media/p0010.jpg": "./static/media/p0010.ff2f4e1fd969b14f7063.jpg",
@@ -62,6 +62,7 @@
     "static/media/professional.png": "./static/media/professional.773d2c5bcd9225e3a120.png",
     "static/media/yourphoner.png": "./static/media/yourphoner.df19a5ecf27e345159f8.png",
     "static/media/christ.jpg": "./static/media/christ.f3e619be8cac863f7c4e.jpg",
+    "static/media/CPM2.png": "./static/media/CPM2.b24683ca835d361d0d35.png",
     "static/media/stellar.png": "./static/media/stellar.ca5b41e368e36a7dcbe5.png",
     "static/media/firefoxUI.jpg": "./static/media/firefoxUI.789a9453ebe4d16b1dff.jpg",
     "static/media/quizWorld1.jpg": "./static/media/quizWorld1.7975d30643e037f7f02f.jpg",
@@ -96,11 +97,11 @@
     "static/media/2Items.svg": "./static/media/2Items.c0a9d8905cb07ed0efbbba731bade0be.svg",
     "static/media/3Items.svg": "./static/media/3Items.9cabce65d5a21cad584519a8f26319fc.svg",
     "static/media/1Items.svg": "./static/media/1Items.fdbab1f5f1d19a7bfcb4ddea553526f7.svg",
-    "main.fbd7dbd3.css.map": "./static/css/main.fbd7dbd3.css.map",
-    "main.208f7cf2.js.map": "./static/js/main.208f7cf2.js.map"
+    "main.dcc6cb03.css.map": "./static/css/main.dcc6cb03.css.map",
+    "main.5c721d56.js.map": "./static/js/main.5c721d56.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbd7dbd3.css",
-    "static/js/main.208f7cf2.js"
+    "static/css/main.dcc6cb03.css",
+    "static/js/main.5c721d56.js"
   ]
 }
