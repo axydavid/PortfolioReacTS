@@ -54,6 +54,7 @@ import cs1 from './img/portDesign/phoneMock2.png'
 import cs2 from './img/portDesign/DashboardMock.png'
 import cs3 from './img/portDesign/CalendarMock.png'
 import crm from './img/portDesign/CalendarPopupMock.png'
+import crm2 from './img/portDesign/CPM2.png'
 
 
 export const data4 = [{ text: 'Design', value: 230 }, { text: 'Figma', value: 70 }, { text: 'Use Case', value: 40 },
@@ -75,7 +76,7 @@ export const data = [
     title: "Customer Management System - Case Study",
     tipo: ['Design', "Product Design", "Figma", "CRM", "Adobe Suite", 'UI/UX', 'Prototyping', 'SaaS', 'Mockups', 'Responsive', 'Use Case', 'Wireframe', 'Usability Research'],
     content: 'A company specializing in meeting planning and sales tasks, approached me with a big challenge - they wanted me to create a user-friendly website and CRM System from the ground up.',
-    img: [crm],
+    img: [crm,crm2],
     case: 'https://dribbble.com/shots/22538831-Customer-Relationship-Management-System-Case-Study'
   }, 
   {

@@ -186,7 +186,7 @@ export default function Portofolio(props: any) {
         </div>
 
         <Container className="p-5 pt-3">
-          <div className="d-flex pt-2">
+          <div className="d-flex pt-2 flex-wrap-reverse">
             <div className="fake-title mr-auto align-self-baseline"><h5>{books.title}</h5></div>
             <div className="button-container d-flex flex-grow-1" style={{ gap: "10px" }}>
               {
