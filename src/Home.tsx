@@ -308,9 +308,9 @@ function Home(props: any) {
     <section style={{ color: 'rgba(3, 3, 3, 0.85)' }}>
       <Container>
         <Row className="mx-auto pt-5 mt-5" style={{ maxWidth: '720px' }}>
-          <h3 className="text-center ">I'm thrilled to have partnered with these fantastic companies:</h3>
+          {/* <h3 className="text-center ">I'm thrilled to have partnered with these fantastic companies:</h3> */}
         </Row>
-        <motion.div className='position-relative ' style={{ zIndex: scaleZIndex }}>
+        {/* <motion.div className='position-relative ' style={{ zIndex: scaleZIndex }}>
           <Swiper
             grabCursor={true}
             modules={[Autoplay]}
@@ -325,7 +325,7 @@ function Home(props: any) {
               <SwiperSlide className='d-flex' style={{ boxShadow: 'none', height: '300px' }}><img className='m-auto cImg h-100 w-100' src={book} style={{ objectFit: 'contain' }} /></SwiperSlide>
             ))}
           </Swiper>
-        </motion.div>
+        </motion.div> */}
 
       </Container>
     </section>
